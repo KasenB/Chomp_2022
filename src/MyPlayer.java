@@ -12,10 +12,12 @@ public class MyPlayer {
          * Add your code here.
          */
         //here
-        System.out.println("here");
-        for (int i = 0; i < 10; i++){
-
-
+        for (int i = 1; i < 4; i++){
+            for (int j = 0; j <= i; j ++) {
+                for (int x = 0; x <= j; x++) {
+                    System.out.println(i + " " + j + " " + x);
+                }
+            }
         }
     }
 
