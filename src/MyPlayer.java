@@ -14,12 +14,25 @@ public class MyPlayer {
         //here
         for (int i = 1; i < 4; i++){
             for (int j = 0; j <= i; j ++) {
-                for (int x = 0; x <= j; x++) {
-                    System.out.println(i + " " + j + " " + x);
+                for (int k = 0; k <= j; k++) {
+                    System.out.println(i + " " + j + " " + k);
+                    oneMoveAway(i,j,k);
                 }
             }
         }
     }
+
+    public void oneMoveAway(int i, int j, int k) {
+        // for each ijk board, print all boards that result after a single move
+        for (i = 0; i < 4; i ++){
+            for (j = 0; j <= i; j ++) {
+                for (k = 0; k <= j; k++) {
+                    System.out.println(i + " " + j + " " + (k-1));
+                }
+            }
+        }
+    }
+
 
     public Point move(Chip[][] pBoard) {
 
