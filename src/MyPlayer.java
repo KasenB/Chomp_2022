@@ -38,6 +38,14 @@ public class MyPlayer {
             }
         }
 
+        for (int x = i - 1; x >0; x--){
+            if (x>=j){
+                System.out.println(x + " " + j + " " + k);
+            } else {
+                System.out.println(x + " " + x + " " + x);
+            }
+        }
+
     }
 
 
